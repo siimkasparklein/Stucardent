@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Stucardent</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="https://unpkg.com/chota@latest" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="home.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Oxygen:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- import the webpage's javascript file -->
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <nav class="desktop">
+      <div class="nav-left nav-links">
+        <a href="#features">Features</a>
+        <a href="about-us.html">About</a>
+        <a href="in-progress.html">Get Started</a>
+      </div>
+      <div class="nav-center Logo">
+        <img src="https://cdn.glitch.com/983d56bf-5fcf-475d-8086-58a85f8f9f90%2FLogo(1).png?v=1622823512705" arc="">
+      </div>
+      <div class="nav-right">
+        <a class="button success" href="https://play.google.com/store">Download</a>
+      </div>
+    </nav>
+
+    <nav class="mobile">
+      <button class="menu-button" onclick="toggleMenu()">
+        <img src="https://cdn.glitch.com/983d56bf-5fcf-475d-8086-58a85f8f9f90%2Fmenu.png?v=1612970979117" arc=""/>
+      </button>
+
+      <div class="nav-links hidden" id="mobile-menu">
+        <button class="close-menu" onclick="toggleMenu()">
+          <img src="https://cdn.glitch.com/983d56bf-5fcf-475d-8086-58a85f8f9f90%2Fclose.png?v=1612973771856" arc=""/>
+        </button>
+        <a href="#features">Features</a>
+        <a href="about-us.html">About</a>
+        <a href="in-progress.html">Get Started</a>
+        <a class="button success" href="https://play.google.com/store">Download</a>
+      </div>
+    </nav>
+
+    <main>
+      <section class="section">
+        <div class="part">
+          <h1>
+            What is Stucardent?
+          </h1>
+          <p>
+            Stucardent stores your cards in one place! Transport and student
+            cards are in one place and never get lost. Everyone can use it! It
+            is free! If you have questions contact us!
+          </p>
+        </div>
+
+        <div>
+          <img
+          src="https://cdn.glitch.com/983d56bf-5fcf-475d-8086-58a85f8f9f90%2Fstudent%20card.jpg?v=1612966814209"
+          alt=>
+        </div>
+      </section>
+
+      <section id="features">
+        <div class="feature-holder">
+          <div class="feature-item">
+            <img
+              src="https://cdn.glitch.com/983d56bf-5fcf-475d-8086-58a85f8f9f90%2Ftransport.jpg?v=1613125525935"
+              alt="App feature"
+            />
+            <h3>Usable on public transport</h3>
+            <p>
+              Stucardent can be used on public transport. Stored cards can be
+              activated for use on public transport. Just press “activate” and
+              your ready to go!
+            </p>
+          </div>
+
+          <div class="feature-item">
+            <img
+              src="https://cdn.glitch.com/983d56bf-5fcf-475d-8086-58a85f8f9f90%2Fstudent%20card%202.jpg?v=1612968486614"
+              alt="App feature"
+            />
+            <h3>All cards in one place</h3>
+            <p>
+              Your cards will not be lost! Cards are safely stored in this app -
+              all in one place!
+            </p>
+          </div>
+
+          <div class="feature-item">
+            <img
+              src="https://cdn.glitch.com/983d56bf-5fcf-475d-8086-58a85f8f9f90%2Ffree.png?v=1612968474361"
+              alt="App feature"
+            />
+            <h3>Completely free</h3>
+            <p>
+              Your cards are stored here and usable in public transport! All for
+              free!
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <section id="contact">
+      <h2>Contacts</h2>
+      <div class="contacts">
+        <div class="social-media">
+          <img
+            src="https://cdn.glitch.com/983d56bf-5fcf-475d-8086-58a85f8f9f90%2Ffacebook-logo.png?v=1612968466174"
+            arc=""
+          />
+          <h4>
+            <a href="https://www.facebook.com/">Facebook</a>
+          </h4>
+        </div>
+
+        <div class="social-media">
+          <img
+            src="https://cdn.glitch.com/983d56bf-5fcf-475d-8086-58a85f8f9f90%2Ftwitter-logo.png?v=1612968469901"
+            arc=""
+          />
+          <h4>
+            <a href="https://twitter.com/">Twitter</a>
+          </h4>
+        </div>
+
+        <div class="social-media">
+          <img
+            src="https://cdn.glitch.com/983d56bf-5fcf-475d-8086-58a85f8f9f90%2Finstagram-logo.png?v=1612968463616"
+            arc=""
+          />
+          <h4>
+            <a href="https://www.instagram.com/">Instagram</a>
+          </h4>
+        </div>
+      </div>
+
+      <div class="subscription">
+        <h2>Subscribe</h2>
+        <form>
+          <input type="email" name="email" id="email" placeholder="email" />
+
+          <input type="submit" value="Subscribe" />
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div>
+        <a href="#features">Features</a>
+        <a href="about-us.html">About</a>
+        <a href="in-progress.html">Get Started</a>
+      </div>
+    </footer>
+  </body>
+</html>
